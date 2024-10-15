@@ -18,7 +18,7 @@ const Experience = () => {
     <div className="">
       
       <div className="pt-2 pb-8 sm:pt-4 md:pb-10">
-      <h1 className="font-domine italic font-semibold text-purple text-[3.6rem] sm:text-7xl ml-1 md:ml-2 leading-none">
+      <h1 className="font-domine italic font-semibold text-purple tracking-wide text-[3.6rem] sm:text-7xl ml-1 md:ml-2 leading-none">
         Experience
       </h1>
       </div>
@@ -86,7 +86,7 @@ const ExperienceCard = ({
         {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-[14px] pl-1 sm:tracking-wider text-white-100"
+            className="text-[14px] pl-1 sm:tracking-wider text-white"
           >
             {point}
           </li>

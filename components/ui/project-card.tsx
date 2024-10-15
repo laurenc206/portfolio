@@ -113,7 +113,7 @@ const ProjectCard = ({
                         <div className="flex flex-wrap sm:flex-nowrap items-center justify-around gap-x-4 px-4 gap-y-3">
                             <a target="_blank" href={githubLink} className="grow">
                             <div className="border border-white/[0.2] rounded-full opacity-90 hover:opacity-100 hover:border-white/[0.5] grow">
-                                <div className="flex items-center justify-center py-[6px] px-10">
+                                <div className="flex items-center justify-center py-3 px-10">
                                     <div className="rounded-full flex justify-center items-center ">
                                         <img src="/github.svg" alt="/github.svg" className="h-[18px] md:h-[20px]" />
                                     </div>
@@ -124,7 +124,7 @@ const ProjectCard = ({
                             {link &&    
                             <a target="_blank" href={link} className="grow">   
                             <div className="border rounded-full  opacity-90 hover:opacity-100 bg-purple grow">
-                                <div className="flex justify-center items-center py-[6px] px-6 gap-x-2 overflow-x-clip">
+                                <div className="flex justify-center items-center py-3 px-6 gap-x-2 overflow-x-clip">
                                     <p className=" md:text-lg text-base font-semibold text-zinc-950">Live Demo</p>
                                    <SquareArrowOutUpRightIcon className="md:h-[18px] h-[16px] text-zinc-950"/>
                                 </div>
@@ -133,7 +133,7 @@ const ProjectCard = ({
                             }
                             { title === "HapMap" &&
                             <div className="border grow rounded-full opacity-90 hover:opacity-100  bg-purple" onClick={() => { setOpen(true) }}>
-                                <div className="flex justify-center items-center py-[6px] px-10 cursor-pointer ">
+                                <div className="flex justify-center items-center py-3 px-10 cursor-pointer ">
                                     <p className=" md:text-lg text-base font-semibold text-zinc-950 text-nowrap">View Demo</p>
                                     
                                 </div>

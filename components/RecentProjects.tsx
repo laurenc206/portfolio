@@ -27,7 +27,7 @@ const RecentProjects = () => {
     <div className="relative items-start flex flex-col px-2 h-full w-full">
       
       <div className="lg:sticky lg:-top-1 w-full z-20 bg-black lg:pt-14">
-        <h1 className="pt-2 pb-8 sm:pt-4 md:pb-10 font-domine italic font-semibold text-purple ml-1 md:ml-2 sm:text-7xl text-[3.6rem] leading-none" >
+        <h1 className="pt-2 pb-8 sm:pt-4 md:pb-10 font-domine italic tracking-wide font-semibold text-purple ml-1 md:ml-2 sm:text-7xl text-[3.6rem] leading-none" >
               Recent Projects
         </h1>
       </div>

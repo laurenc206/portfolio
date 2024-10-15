@@ -61,9 +61,6 @@ const ProjectCard = ({
     }, [usernameCopied, passwordCopied])
 
 
-
-    // style={{scale: scrollYProgress, opacity: scrollYProgress}} 
-    // <div ref={ref} className={`mb-3 sm:mb-8 last:mb:0 items-start`}> 
   return (
   
     <div className="flex justify-center relative max-w-[660px] lg:max-w-[600px]" >

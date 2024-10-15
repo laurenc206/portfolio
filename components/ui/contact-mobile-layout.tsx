@@ -2,6 +2,7 @@
 import { FaRegSmile } from "react-icons/fa";
 import { MdOutlineMail } from 'react-icons/md';
 import ContactForm from "./contact-form";
+import Image from "next/image";
 
 const Paragraph = () => {
     return (
@@ -27,7 +28,7 @@ const SocialIcons = () => {
 
       <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank"> 
         <div className="opacity-70 hover:opacity-100 flex p-2">
-          <img src="/link.svg" className="h-[18px]" />
+          <Image src="/link.svg" alt="linked-in logo" width={18} height={18} />
 
         </div>
       </a>
@@ -35,7 +36,7 @@ const SocialIcons = () => {
 
       <a href="https://github.com/laurenc206/" target="_blank"> 
         <div className=" opacity-70 hover:opacity-100 flex -mt-[2px] p-2">     
-          <img src="/github2.svg" className="h-[20px]"/>    
+          <Image src="/github2.svg" alt="github logo" width={20} height={20}/>    
         </div>
       </a>
 

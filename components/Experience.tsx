@@ -2,8 +2,7 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css';
 import { experiences } from '@/data';
-
-
+import Image from 'next/image'
 interface ExperienceProps {
   title: string;
   company_name: string;
@@ -63,10 +62,12 @@ const ExperienceCard = ({
       
       icon={
         <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
-          <img 
+          <Image
             src={icon}
             alt={company_name}
-            className="w-[60px] object-cover"
+            className="object-cover"
+            width={60}
+            height={60}
           />
         </div>
       }
@@ -110,10 +111,12 @@ const EducationCard = () => {
    
       icon={
         <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
-          <img 
+          <Image
             src="uw.svg"
             alt="uw"
-            className="w-[60px] object-cover"
+            className="object-cover"
+            width={60}
+            height={60}
           />
         </div>
       }

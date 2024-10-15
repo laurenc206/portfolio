@@ -3,6 +3,7 @@
 import { FaRegSmile } from "react-icons/fa";
 import { MdOutlineMail } from 'react-icons/md';
 import ContactForm from "./contact-form";
+import Image from 'next/image'
 
 const Paragraph = () => {
   return (
@@ -28,7 +29,7 @@ const SocialLinks = () => {
 
                         <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank">
                             <div className="flex items-center gap-x-[6px] opacity-80 hover:opacity-100 p-2">
-                              <img src="/link.svg" className="h-[16px]" />
+                              <Image src="/link.svg" alt="linkedin logo" width={16} height={16}/>
                          
                               <div className="text-xs underline md:hidden lg:flex">
                                 /cavanaugh-lc
@@ -38,7 +39,7 @@ const SocialLinks = () => {
 
                         <a href="https://github.com/laurenc206/" target="_blank">
                             <div className=" flex items-center gap-x-[6px] opacity-80 hover:opacity-100 -ml-[2px] p-2">                   
-                              <img src="/github2.svg" className="h-[18px]"/>
+                              <Image src="/github2.svg" alt="github logo"  width={18} height={18} />
                             
                               <div className="text-xs underline md:hidden lg:flex">
                                 /laurenc206
@@ -96,7 +97,7 @@ const ContactLayout= () => {
                       {/* RIGHT CONTAINER */}
             <div className="w-1/2 flex justify-center md:justify-end md:px-2">
               <div className="h-[300px] md:max-h-[450px] lg:h-[520px] flex">
-                <img src="/headshot.jpeg" className="h-[300px] md:h-[450px] lg:h-[520px]"/>
+                <img src="/headshot.jpeg" alt="headshot" className="h-[300px] md:h-[450px] lg:h-[520px]"/>
               </div>
             </div>
           </div>

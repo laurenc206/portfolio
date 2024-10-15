@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { CgExternal } from "react-icons/cg";
 import { BackgroundGradientAnimation } from "./gradient-bg"
 import { HiOutlineDownload } from "react-icons/hi";
-
+import Image from "next/image";
 
 export const AboutMe = () => {
     return (
@@ -14,25 +14,25 @@ export const AboutMe = () => {
             </h2>
             <div className="p-1 sm:p-4">
             <h1 className="text-white text-[1.2rem] lg:text-3xl font-semibold mb-7 mt-2">
-                Hi there! I’m  Lauren, a passionate Software Developer based in Seattle, Washington.
+                Hi there! I&apos;m  Lauren, a Software Developer based in Seattle, Washington.
              
                
             </h1>
             <div className="flex flex-col gap-y-5 font-light text-neutral-300 text-sm lg:text-base">
                 <p>
-                    With over <span className="text-purple font-bold underline">6 years of coding experience</span>, I’ve cultivated a deep love for technology and its possibilities.
+                    With over <span className="text-purple font-bold underline">6 years of coding experience</span>, I&apos;ve cultivated a deep love for technology and its possibilities.
                 </p>
                 <p>
-                    I earned my Bachelor’s degree in Computer Science from the renowned Paul G. Allen School at the University of Washington, where I honed my skills in backend development through courses in computer security, databases, software engineering, and distributed systems.
+                    I earned my Bachelor&apos;s degree in Computer Science from the renowned Paul G. Allen School at the University of Washington, where I honed my skills in backend development through courses in computer security, databases, software engineering, and distributed systems.
                 </p>
                 <p>
-                    Since then, I've expanded my expertise into front-end development, diving into full-stack projects that turn my ideas into reality. There’s something magical about seeing a concept transform into a functioning application!
+                    Since then, I've expanded my expertise into front-end development, diving into full-stack projects that turn my ideas into reality. There&apos;s something magical about seeing a concept transform into a functioning application!
                 </p>
                 <p>
                     Currently, I work as an AI Consultant, evaluating and analyzing AI-generated code. This role not only sharpens my technical skills but also introduces me to cutting-edge libraries and frameworks.
                 </p>
                 <p>
-                    I love coding, collaborating, and creating! Let’s connect and explore how I can contribute to your next project.
+                    I love coding, collaborating, and creating! Let&apos;s connect and explore how I can contribute to your next project.
             </p>
             </div>
            </div>
@@ -80,7 +80,7 @@ export const TechStack = () => {
                 </h2>
 
                 <div className="absolute">
-                    <img src="/grid.svg" />
+                    <img src="/grid.svg" alt="grid" />
                 </div>
 
              

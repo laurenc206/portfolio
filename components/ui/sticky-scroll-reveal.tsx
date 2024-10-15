@@ -1,7 +1,5 @@
 "use client";
-import React, { MutableRefObject, useEffect, useRef, useState } from "react";
-import { useMotionValueEvent, useScroll } from "framer-motion";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import ProjectWrapper from "./project-wrapper";
 
 export const StickyScroll = ({

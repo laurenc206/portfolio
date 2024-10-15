@@ -52,8 +52,9 @@ const ExperienceCard = ({
   points
  }: ExperienceProps) => {
   return (
+    <div className="opacity-90">
     <VerticalTimelineElement
-    contentStyle={{ background: '#0f172a', color: '#fff'}}
+    contentStyle={{ background: '#000319', color: '#fff'}}
       contentArrowStyle={{ borderRight: '7px solid #0f172a' }}
    
       visible={true}
@@ -98,15 +99,16 @@ const ExperienceCard = ({
         </h3>
         </div>
     </VerticalTimelineElement>
+    </div>
   )
 }
 
 const EducationCard = () => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#0f172a', color: '#fff'}}
+      contentStyle={{ background: '#000319', color: '#fff', opacity: "90"}}
       contentArrowStyle={{ borderRight: '7px solid #0f172a' }}   
-   
+      className="bg-opacity-90"
       icon={
         <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
           <img

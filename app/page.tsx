@@ -32,16 +32,16 @@ export default function Home() {
          
          
          
-            <section id="about" className="relative min-h-[calc(100vh-56px)] scroll-mt-14 mt-52 pb-52"> 
+            <section id="about" className="relative min-h-[calc(100vh-56px)] scroll-mt-14 mt-52 pb-72"> 
               <About/>
             </section>
 
-            <section id="projects" className="relative scroll-mt-14 mt-14 lg:mt-0 lg:scroll-mt-0 pb-52">   
+            <section id="projects" className="relative scroll-mt-14 mt-14 lg:mt-0 lg:scroll-mt-0 pb-72">   
               <RecentProjects /> 
             </section>            
 
 
-            <section id="experience" className="relative scroll-mt-14 mt-14 pb-52">      
+            <section id="experience" className="relative scroll-mt-14 mt-14 pb-72">      
                 <Experience/> 
             </section>   
 

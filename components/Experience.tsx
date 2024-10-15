@@ -134,7 +134,7 @@ const EducationCard = () => {
           {"Bachelors of Sciences, Computer Science"}
       </div>
 
-      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-sm tracking-wider">
+      <div className="mt-4 pl-2 sm:pl-5 text-white text-sm tracking-wider">
         <span className="font-semibold">{"Related Coursework: "}</span>
         <span className="font-light">{"Software Engineering, Distributed Systems, Database Systems, Systems Programming, Web Browser Engineering, Computer Security, Data Structures and Algorithms, Object-Oriented Programming, Probability & Statistics in Computer Science"}</span>
       </div>

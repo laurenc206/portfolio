@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Paragraph = () => {
     return (
-          <div className="flex-col gap-y-2 font-light text-neutral-300 text-sm mb-5 w-full">
+          <div className="flex-col gap-y-2 font-light text-white-100 text-sm mb-5 w-full">
             <h3>
               Thanks for checking out my portfolio! 
             </h3>
@@ -42,7 +42,7 @@ const SocialIcons = () => {
 
 
       <div className="flex flex-row gap-x-[6px] opacity-70 hover:opacity-100 -mt-[4px] p-2">
-      
+        <MdOutlineMail size={20}/>
       </div>
     </div>
 

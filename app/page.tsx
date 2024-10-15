@@ -16,7 +16,7 @@ export default function Home() {
   return (
    <main className="bg-black flex justify-center items-center flex-col relative overflow-x-hidden">
           
-          <div className={`absolute top-0 left-0 h-[95vh] w-full contrast-200 brightness-100 saturate-200 overflow-hidden`}>
+          <div className={`absolute top-0 left-0 h-[85vh] w-full contrast-200 brightness-100 saturate-200 overflow-hidden`}>
                   <BackgroundGradientAnimation containerClassName="opacity-70" /> 
           </div>
            
@@ -32,7 +32,7 @@ export default function Home() {
          
          
          
-            <section id="about" className="relative min-h-[calc(100vh-56px)] scroll-mt-14 mt-52 pb-72"> 
+            <section id="about" className="relative min-h-[calc(100vh-56px)] scroll-mt-14 mt-14 pb-72"> 
               <About/>
             </section>
 

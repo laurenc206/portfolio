@@ -6,7 +6,7 @@ import Link from "next/link";
 const Hero = () => {
   return (
     
-        <div className="h-[95vh] " >
+        <div className="h-[85vh] " >
 
    
 

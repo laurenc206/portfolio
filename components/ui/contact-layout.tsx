@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Paragraph = () => {
   return (
-    <div className="flex-col gap-y-2 font-light text-neutral-300 text-sm lg:text-base">
+    <div className="flex-col gap-y-2 font-light text-white text-sm lg:text-base">
     <h3>
       Thanks for checking out my portfolio! 
     </h3>
@@ -48,9 +48,9 @@ const SocialLinks = () => {
                         </a>
 
                         <div className="flex flex-wrap opacity-80">
-                            <div className="flex items-center gap-x-[6px] -mt-[4px] p-2 md:hidden lg:flex">
+                            <div className="flex items-center gap-x-[6px] -mt-[4px] p-2">
                                 <MdOutlineMail size={18}/>
-                                <div className="text-xs ">
+                                <div className="text-xs  md:hidden lg:flex">
                                     cavanaugh.lc@gmail.com
                                 </div>
                             </div>

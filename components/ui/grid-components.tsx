@@ -7,7 +7,7 @@ import { HiOutlineDownload } from "react-icons/hi";
 import Image from "next/image";
 export const AboutMe = () => {
     return (
-        <div className="p-4 z-10 bg-black-100 bg-opacity-75 h-full w-full">
+        <div className="p-4 z-10 bg-black-100 h-full w-full">
             <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-2 mt-2">
               About Me
             </h2>
@@ -41,7 +41,7 @@ export const AboutMe = () => {
 
 export const AvaliableForWork = () => {
     return (
-        <div className="pt-4 pl-4 flex-col overflow-hidden relative z-10 bg-black-100 bg-opacity-75 h-full w-full"> 
+        <div className="pt-4 pl-4 flex-col overflow-hidden relative z-10 bg-black-100 h-full w-full"> 
             <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-3 mt-2 pr-2">
                 Remote and On-Site
             </h2>
@@ -73,7 +73,7 @@ export const TechStack = () => {
         {name: 'TailwindCSS'},
     ]
     return (
-            <div className="p-4 justify-between flex flex-col z-10 bg-black-100 bg-opacity-75 w-full min-w-fit h-fit my-3 relative">
+            <div className="p-4 justify-between flex flex-col z-10 bg-black-100 w-full min-w-fit h-fit my-3 relative">
                 <h2 className="sm:hidden uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-2 mt-2">
                     My Tech Stack
                 </h2>
@@ -166,7 +166,7 @@ export const Socials = () => {
                 <div className="flex flex-col h-full px-4 gap-y-4">
 
                     <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank">
-                        <div className=" bg-slate-500  flex items-center rounded-md py-1 px-2 bg-opacity-15">
+                        <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
                             <div className="relative px-2 py-2 flex gap-x-2">
                                 <img src="/link.svg" className="h-full" />
                             </div>
@@ -180,7 +180,7 @@ export const Socials = () => {
                     </a>
 
                     <a href="https://github.com/laurenc206/" target="_blank">
-                        <div className=" bg-slate-500 flex items-center rounded-md py-1 bg-opacity-15 px-2">
+                        <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
                             <div className="relative px-2 py-2 flex gap-x-2">
                                 <img src="github2.svg" className="h-full "/>
                             </div>
@@ -194,7 +194,7 @@ export const Socials = () => {
                         </div>
                     </a>
 
-                    <div className=" bg-slate-500 flex items-center rounded-md py-1 bg-opacity-15 px-2">
+                    <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
                         <div className="relative px-2 py-2 flex gap-x-2 items-center">
                             <MdOutlineMail />
                             <text className="text-xs sm:text-sm">

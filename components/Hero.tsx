@@ -10,12 +10,8 @@ const Hero = () => {
 
    
 
-          <div className={`absolute top-0 left-0 h-[95vh] w-full overflow-hidden bg-noise bg-blend-color-dodge contrast-200 brightness-100 saturate-200 `}>
-              <BackgroundGradientAnimation containerClassName="opacity-70" />
-            
-             
-            </div>
- 
+
+
 
 
 
@@ -23,13 +19,15 @@ const Hero = () => {
         <div className="px-8 sm:px-2 md:px-4 relative items-center h-full w-full flex">
  
                                              {/* SCROLL DOWN */}
-            <div className="opacity-40 absolute z-50 bottom-2 flex justify-center w-full overflow-hidden">
+            <div className="opacity-40 absolute z-50 bottom-2 left-0 flex justify-center w-full overflow-hidden">
               <span className="h-[30px] w-[15px] border-2 border-white rounded-2xl flex ">
                 <span className="block h-[10px] w-[10px] bg-white border rounded-full m-auto transition-transform animate-mouse">
 
                 </span>
               </span>
-            </div>
+            </div>                   
+
+           
 
         <div className="flex relative my-20 z-10 w-full">
           <div className=" flex flex-col ">

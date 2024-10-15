@@ -62,7 +62,7 @@ const ContactForm = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="Name"
-              className="bg-tertiary py-3 px-6 text-white outlined-none border-none font-medium text-sm sm:text-base"
+              className="bg-opacity-90 bg-slate-900 border border-white/[0.2] focus:border-white/[0.5] py-3 px-6 text-white outlined-none font-medium text-sm sm:text-base"
             />
      
             <input
@@ -71,7 +71,7 @@ const ContactForm = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="Email"
-              className="bg-tertiary py-3 px-6 text-white outlined-none border-none font-medium text-sm sm:text-base"
+              className=" bg-slate-900 border border-white/[0.2] focus:border-white/[0.5] py-3 px-6 text-white font-medium text-sm sm:text-base"
             />
         
             <textarea
@@ -80,7 +80,7 @@ const ContactForm = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Type your message here"
-              className="bg-tertiary py-3 px-6 text-white outlined-none border-none font-medium text-sm sm:text-base"
+              className="bg-opacity-90 bg-slate-900 border border-white/[0.2] focus:border-white/[0.5] py-3 px-6 text-white outlined-none font-medium text-sm sm:text-base"
               
             />
           

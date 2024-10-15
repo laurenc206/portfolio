@@ -53,8 +53,8 @@ const ExperienceCard = ({
  }: ExperienceProps) => {
   return (
     <VerticalTimelineElement
-    contentStyle={{ background: '#000319', color: '#fff'}}
-      contentArrowStyle={{ borderRight: '7px solid #232631' }}
+    contentStyle={{ background: '#0f172a', color: '#fff'}}
+      contentArrowStyle={{ borderRight: '7px solid #0f172a' }}
    
       visible={true}
       
@@ -104,8 +104,8 @@ const ExperienceCard = ({
 const EducationCard = () => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#000319', color: '#fff'}}
-      contentArrowStyle={{ borderRight: '7px solid #232631' }}   
+      contentStyle={{ background: '#0f172a', color: '#fff'}}
+      contentArrowStyle={{ borderRight: '7px solid #0f172a' }}   
    
       icon={
         <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
@@ -132,7 +132,7 @@ const EducationCard = () => {
           {"Bachelors of Sciences, Computer Science"}
       </div>
 
-      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-xs sm:text-sm tracking-wider">
+      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-sm tracking-wider">
         <span className="font-semibold">{"Related Coursework: "}</span>
         <span className="font-light">{"Software Engineering, Distributed Systems, Database Systems, Systems Programming, Web Browser Engineering, Computer Security, Data Structures and Algorithms, Object-Oriented Programming, Probability & Statistics in Computer Science"}</span>
       </div>

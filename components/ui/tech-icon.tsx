@@ -17,7 +17,7 @@ const TechIcon = ({ name } : { name: string }) => {
             key={icon} 
             className={`h-10 w-10 flex justify-center items-center`}
         >
-            <img src={icon} alt={icon} title={icon} className={`${name === ("JavaScript" || "HTML5" ) ? "p-2" : "p-1"}`}/>
+            <img src={icon} alt={icon} title={icon} className={`${(name === "JavaScript" || name === "HTML5")  ? "p-2" : "p-1"}`}/>
         </div>
         <div className="flex flex-col text-[9px] items-center opacity-50 justify-center">
             {name}

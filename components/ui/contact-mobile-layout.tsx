@@ -87,7 +87,7 @@ const ContactMobileLayout = () => {
           <div className="z-1 absolute right-0 top-0 z-0 opacity-90">
          
           <div className="flex w-full items-end justify-end p-2">
-            <img src="/headshot.jpeg" className="w-3/4 max-w-[440px]"/>
+            <img src="/headshot.JPEG" className="w-3/4 max-w-[440px]"/>
           </div>
   
           </div>

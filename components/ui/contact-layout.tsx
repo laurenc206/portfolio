@@ -97,7 +97,7 @@ const ContactLayout= () => {
                       {/* RIGHT CONTAINER */}
             <div className="w-1/2 flex justify-center md:justify-end md:px-2">
               <div className="h-[300px] md:max-h-[450px] lg:h-[520px] flex">
-                <img src="/headshot.jpeg" alt="headshot" className="h-[300px] md:h-[450px] lg:h-[520px]"/>
+                <img src="/headshot.JPEG" alt="headshot" className="h-[300px] md:h-[450px] lg:h-[520px]"/>
               </div>
             </div>
           </div>

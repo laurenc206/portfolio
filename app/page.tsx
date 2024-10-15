@@ -17,7 +17,7 @@ export default function Home() {
 
            
                      
-      <div className="max-w-6xl w-full px-2 sm:px-10 md:px-6 lg:px-12">
+      <div className="max-w-7xl w-full px-2 sm:px-10 md:px-6 lg:px-12">
           <div>
           
           <NavBar navItems={navItems} />

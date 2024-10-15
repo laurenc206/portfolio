@@ -5,7 +5,6 @@ import { CgExternal } from "react-icons/cg";
 import { BackgroundGradientAnimation } from "./gradient-bg"
 import { HiOutlineDownload } from "react-icons/hi";
 import Image from "next/image";
-
 export const AboutMe = () => {
     return (
         <div className="p-4 z-10 bg-black-100 bg-opacity-75 h-full w-full">
@@ -26,7 +25,7 @@ export const AboutMe = () => {
                     I earned my Bachelor&apos;s degree in Computer Science from the renowned Paul G. Allen School at the University of Washington, where I honed my skills in backend development through courses in computer security, databases, software engineering, and distributed systems.
                 </p>
                 <p>
-                    Since then, I've expanded my expertise into front-end development, diving into full-stack projects that turn my ideas into reality. There&apos;s something magical about seeing a concept transform into a functioning application!
+                    Since then, I&apos;ve expanded my expertise into front-end development, diving into full-stack projects that turn my ideas into reality. There&apos;s something magical about seeing a concept transform into a functioning application!
                 </p>
                 <p>
                     Currently, I work as an AI Consultant, evaluating and analyzing AI-generated code. This role not only sharpens my technical skills but also introduces me to cutting-edge libraries and frameworks.
@@ -74,13 +73,13 @@ export const TechStack = () => {
         {name: 'TailwindCSS'},
     ]
     return (
-            <div className="p-4 justify-between flex flex-col z-10 bg-black-100 bg-opacity-75 w-full min-w-fit h-fit my-3">
+            <div className="p-4 justify-between flex flex-col z-10 bg-black-100 bg-opacity-75 w-full min-w-fit h-fit my-3 relative">
                 <h2 className="sm:hidden uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-2 mt-2">
                     My Tech Stack
                 </h2>
 
-                <div className="absolute">
-                    <img src="/grid.svg" alt="grid" />
+                <div className="absolute top-0 left-0 h-full w-full">
+                    <Image src="/grid.svg" alt="grid" fill={true} />
                 </div>
 
              

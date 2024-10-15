@@ -13,11 +13,11 @@ import { navItems } from "@/data";
 export default function Home() {
 
   return (
-   <main className="bg-black">
+   <main className="bg-black flex justify-center items-center flex-col">
 
            
                      
-      <div className="max-w-6xl w-full px-2 sm:px-10 md:px-6 lg:px-12 flex  justify-center items-center flex-col">
+      <div className="max-w-6xl w-full px-2 sm:px-10 md:px-6 lg:px-12">
           <div>
           
           <NavBar navItems={navItems} />

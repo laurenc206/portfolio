@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { useState, useRef, forwardRef } from 'react';
+import { useState, useRef} from 'react';
 import emailjs from '@emailjs/browser';
 
 const defaultFormValues = {

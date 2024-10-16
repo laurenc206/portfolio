@@ -4,6 +4,7 @@ import { FaRegSmile } from "react-icons/fa";
 import { MdOutlineMail } from 'react-icons/md';
 import ContactForm from "./contact-form";
 import Image from 'next/image'
+import toast from "react-hot-toast";
 
 const Paragraph = () => {
   return (
@@ -13,7 +14,7 @@ const Paragraph = () => {
     </h3>
     <div className="pt-2 flex">
       <p className="leading-normal">
-      If you&apos;re interested in working together I&apos;d love to hear from you! Reach out using the details below or fill out the contact form and I&apos;ll get back to you as soon as possible <FaRegSmile className="inline self-center"/>
+      If you&apos;re interested in working together I&apos;d love to hear from you! Reach out using the social media icon links below or fill out the contact form and I&apos;ll get back to you as soon as possible <FaRegSmile className="inline self-center"/>
       </p>
 
       
@@ -23,7 +24,10 @@ const Paragraph = () => {
 }
 
 const SocialLinks = () => {
-
+  const handleEmailCopy = () => {
+    navigator.clipboard.writeText("cavanaugh.lc@gmail.com");
+    toast.success('Email Copied!')
+  }
   return (
     <div className="flex flex-col md:flex-row flex-wrap gap-x-10 gap-y-4 -ml-2 ">
 
@@ -48,12 +52,12 @@ const SocialLinks = () => {
                         </a>
 
                         <div className="flex flex-wrap opacity-80">
-                            <div className="flex items-center gap-x-[6px] -mt-[4px] p-2">
+                            <button className="flex items-center gap-x-[6px] -mt-[4px] p-2" onClick={handleEmailCopy}>
                                 <MdOutlineMail size={18}/>
                                 <div className="text-xs  md:hidden lg:flex">
                                     cavanaugh.lc@gmail.com
                                 </div>
-                            </div>
+                            </button>
                         </div>
                     </div>
                   

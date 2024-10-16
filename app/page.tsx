@@ -8,14 +8,14 @@ import { BackgroundGradientAnimation } from "@/components/ui/gradient-bg";
 
 import { NavBar } from "@/components/ui/nav-bar";
 import { navItems } from "@/data";
-
+import {Toaster} from 'react-hot-toast';
 
 
 export default function Home() {
 
   return (
    <main className="bg-black flex justify-center items-center flex-col relative overflow-x-hidden">
-          
+        <Toaster />  
           <div className={`absolute top-0 left-0 h-[85vh] w-full contrast-200 brightness-100 saturate-200 overflow-hidden`}>
                   <BackgroundGradientAnimation containerClassName="opacity-70" /> 
           </div>
@@ -49,6 +49,8 @@ export default function Home() {
             <section id="contact" className="relative">             
                 <Contact />
             </section>
+
+            
           </div>
 
       </div>

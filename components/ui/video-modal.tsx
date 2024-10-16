@@ -13,8 +13,8 @@ const VideoModal = ({ open, onClose }: any ) => {
             <div 
               
                 className={`
-                    px-3 py-6 sm:px-6 shadow transition-all  bg-zinc-950 rounded-xl ring-white ring-[0.2px]
-                    ${open ? "scale-100 opacity-100" : "scale-125 opacity-0"}
+                    px-3 py-6 sm:px-6 shadow transition-all  bg-zinc-950 rounded-xl border border-white/[.2]
+                    ${open ? "opacity-100" : "opacity-0"}
                 `}>
                     
                     <div className="flex justify-between items-center w-full pb-4 px-1 sm:px-4">

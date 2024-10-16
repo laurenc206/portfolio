@@ -17,19 +17,19 @@ const Experience = () => {
   return (
     <div className="">
       
-      <div className="pt-2 pb-8 sm:pt-4 md:pb-10">
-      <h1 className="font-domine italic font-semibold text-purple tracking-wide text-[3.6rem] sm:text-7xl ml-1 md:ml-2 leading-none">
+      <div className="pt-2 pb-10 sm:pt-4 md:pb-12">
+      <h1 className="font-domine italic font-semibold text-purple tracking-wide text-[3.6rem] sm:text-7xl ml-2 leading-none">
         Experience
       </h1>
       </div>
       
       <VerticalTimeline
         layout="1-column-left"
-        lineColor='#bec1dd'
+        lineColor='#d4d4d4'
         
       >
         {experiences.map((experience, index) => (
-          <div key={`experience-${index}`} className="pb-16">
+          <div key={`experience-${index}`} className="pb-20">
             <ExperienceCard  
               {...experience} 
             />
@@ -52,17 +52,27 @@ const ExperienceCard = ({
   points
  }: ExperienceProps) => {
   return (
-    <div className="opacity-90">
+    <div className="">
     <VerticalTimelineElement
-    contentStyle={{ background: '#000319', color: '#fff'}}
-      contentArrowStyle={{ borderRight: '7px solid #0f172a' }}
+      contentStyle={{ 
+        background: '#000319', 
+        color: '#fff',
+        boxShadow: 'none',
+        border: '1px solid rgba(255, 255, 255, .2)',
+        borderRadius: '24px'
+
+      }}
+      contentArrowStyle={{ 
+        borderRight: '7px solid rgba(255, 255, 255, .6)', 
+
+      }}
    
       visible={true}
       
-      
+
       
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#d4d4d4] rounded-full overflow-hidden' >
           <img
             src={icon}
             alt={company_name}
@@ -72,6 +82,7 @@ const ExperienceCard = ({
       }
     
     >
+      <div className="opacity-90">
       <div>
         <h3 className="text-white text-2xl sm:text-3xl font-semibold mb-2 ">
           {title}
@@ -86,7 +97,7 @@ const ExperienceCard = ({
         {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-[14px] pl-1 sm:tracking-wider text-white"
+            className="lg:font-normal font-light text-sm text-neutral-300 leading-normal"
           >
             {point}
           </li>
@@ -94,9 +105,10 @@ const ExperienceCard = ({
       </ul>
 
       <div>
-        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-blue-100 -mb-5 mt-5">
+        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-white-100 -mb-5 mt-5">
           February 2024 - Current 
         </h3>
+        </div>
         </div>
     </VerticalTimelineElement>
     </div>
@@ -106,11 +118,22 @@ const ExperienceCard = ({
 const EducationCard = () => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#000319', color: '#fff', opacity: "90"}}
-      contentArrowStyle={{ borderRight: '7px solid #0f172a' }}   
-      className="bg-opacity-90"
+    contentStyle={{ 
+      background: '#000319', 
+      color: '#fff',
+      boxShadow: 'none',
+      border: '1px solid rgba(255, 255, 255, .2)',
+      borderRadius: '24px'
+
+    }}
+    contentArrowStyle={{ 
+      borderRight: '7px solid rgba(255, 255, 255, .6)', 
+
+    }}
+     
+
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-2 border-white-100 rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#d4d4d4] rounded-full overflow-hidden' >
           <img
             src="uw.svg"
             alt="uw"
@@ -134,7 +157,7 @@ const EducationCard = () => {
           {"Bachelors of Sciences, Computer Science"}
       </div>
 
-      <div className="mt-4 pl-2 sm:pl-5 text-white text-sm tracking-wider">
+      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-[14px] tracking-wider">
         <span className="font-semibold">{"Related Coursework: "}</span>
         <span className="font-light">{"Software Engineering, Distributed Systems, Database Systems, Systems Programming, Web Browser Engineering, Computer Security, Data Structures and Algorithms, Object-Oriented Programming, Probability & Statistics in Computer Science"}</span>
       </div>

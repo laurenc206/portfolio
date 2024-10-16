@@ -31,12 +31,12 @@ const Hero = () => {
 
         <div className="flex relative my-20 z-10 w-full">
           <div className=" flex flex-col ">
-            <h2 className="uppercase tracking-widest text-xs text-blue-100 max-w-80 mb-6">
+            <h2 className="uppercase tracking-widest text-xs text-white-100 max-w-80 mb-6">
               Welcome to my portfolio!
             </h2>
 
             <h1 className="mb-4 -ml-2">
-              <span className="text-[3.2rem] sm:text-[5.5rem] lg:text-[6rem] font-domine font-bold italic text-purple leading-none">
+              <span className="text-[3.6rem] sm:text-[5.5rem] lg:text-[6rem] font-domine font-extrabold italic text-purple leading-[.9]">
                 Lauren Cavanaugh
               </span>
             </h1>

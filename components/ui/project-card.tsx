@@ -2,7 +2,6 @@
 
 import parse from 'html-react-parser';
 import { useEffect, useState } from 'react';
-import VideoModal from './video-modal';
 import { ClipboardCopy } from 'lucide-react';
 import { Check } from 'lucide-react';
 import TechIcon from './tech-icon';
@@ -21,9 +20,11 @@ const ProjectCard = ({
     username,
     password,
     techStack,
-    imgclassName 
+    imgclassName, 
+    setOpen
+
 } : any) => {
-    const [open, setOpen] = useState(false);
+
     const [usernameCopied, setUsernameCopied] = useState(false);
     const [passwordCopied, setPasswordCopied] = useState(false);
 
@@ -65,7 +66,7 @@ const ProjectCard = ({
   
     <div className="flex justify-center relative max-w-[660px] lg:max-w-[600px]" >
                     
-                    <div className="items-center border border-white/[0.2] bg-[#000319] p-6 justify-between space-y-3 rounded-3xl">
+                    <div className="items-center border border-white/[0.2] bg-black-100 p-6 justify-between space-y-3 rounded-3xl">
 
                         {/* PROJECT IMAGE */}
                         <div className="relative flex items-center justify-center  overflow-hidden h-[10rem] mb-6">
@@ -87,7 +88,7 @@ const ProjectCard = ({
                         </h1>
 
                         {/* DESCRIPTION */}
-                        <p className="lg:font-normal font-light text-sm text-neutral-200">
+                        <p className="lg:font-normal font-light text-sm text-neutral-300 leading-normal">
                             {parse(des)}
                         </p>
 
@@ -95,8 +96,8 @@ const ProjectCard = ({
 
 
 
-                        <div className="flex items-center py-4 w-full relative justify-center md:justify-between">
-                            <div className="flex flex-wrap gap-y-2 gap-x-2 md:gap-x-6 w-full">
+                        <div className="flex items-center py-4 w-full relative">
+                            <div className="flex flex-wrap gap-y-2 gap-x-4 md:gap-x-6">
                                 {techStack.map((t : any) => (
                                     <TechIcon name={t} key={t}/>
                                 ))}
@@ -143,7 +144,7 @@ const ProjectCard = ({
 
                         {/* TEXT BELOW BUTTONS */}
                         { des2 && 
-                            <div className={`pt-3 sm:pt-4 text-sm opacity-90`}>
+                            <div className={`pt-1 sm:pt-4 text-sm text-neutral-300 px-2`}>
                                 <p>{des2}</p>
                             </div>
 
@@ -152,14 +153,16 @@ const ProjectCard = ({
                         {/* USERNAME AND PASSWORD */}
                         { (username && password) && 
                    
-                            <div className="flex flex-col gap-y-4 pt-2 justify-center">
+                            <div className="flex flex-col gap-y-4 pt-1 justify-center">
                                 <div className="flex flex-col gap-y-1 px-2 max-w-[440px]">
-                                    <p className="uppercase tracking-widest text-xs text-blue-100">
+                                    <p className="uppercase tracking-widest text-xs text-white-100">
                                         {`username:`}
                                     </p>
                                     <div className="flex flex-row gap-x-2">    
-                                        <div className="flex grow border items-center px-4 opacity-90 hover:opacity-100 hover:border-white/[0.5] bg-slate-900">
+                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 border-white/[0.2] rounded-md py-3 px-4 outlined-none">
+                                            <div className="opacity-60 text-sm sm:text-base">
                                             {username}
+                                            </div>
                                         </div>
                                         <button onClick={() => handleUsernameCopy(username)} className="p-2 border border-white/[0.2] rounded-md opacity-90 hover:opacity-100 hover:border-white/[0.5]">
                                             {usernameCopied ? <Check className="h-[24px]"/> : <ClipboardCopy className="h-[24px]" />}
@@ -167,12 +170,14 @@ const ProjectCard = ({
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-y-1 px-2 max-w-[440px]">
-                                    <p className="uppercase tracking-widest text-xs text-blue-100">
+                                    <p className="uppercase tracking-widest text-xs text-white-100">
                                         {`password:`}
                                     </p>
                                     <div className="flex flex-row gap-x-2">
-                                        <div className="flex grow border items-center px-4 opacity-90 hover:opacity-100 hover:border-white/[0.5] bg-slate-900">
-                                            {password}    
+                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 border-white/[0.2] rounded-md py-3 px-4 outlined-none">
+                                            <div className="opacity-60 text-sm sm:text-base">
+                                                {password}
+                                            </div>    
                                         </div>
                                         <button onClick={() => handlePasswordCopy(password)} className="p-2 border border-white/[0.2] rounded-md opacity-90 hover:opacity-100 hover:border-white/[0.5]">
                                             {passwordCopied ? <Check className="h-[24px]"/> : <ClipboardCopy className="h-[24px]" />}
@@ -186,9 +191,7 @@ const ProjectCard = ({
 
                     </div>
                       
-      {open &&
-        <VideoModal open={open} onClose={() => setOpen(false)}/>
-      }
+
              
                 
             

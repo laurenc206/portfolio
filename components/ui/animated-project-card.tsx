@@ -8,7 +8,7 @@ const AnimatedProjectCard = ( props : any) => {
     const ref = useRef(null)
     const { scrollYProgress } = useScroll({
         target: ref, 
-        offset: ["start end", "1 1.4"],
+        offset: ["start end", "start .2"],
     });
 
 

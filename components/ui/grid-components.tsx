@@ -1,14 +1,19 @@
+"use client"
 import { SkeletonFour as Globe } from "./bento-globe";
 import TechIcon from "./tech-icon";
 import { MdOutlineMail } from "react-icons/md";
 import { CgExternal } from "react-icons/cg";
 import { BackgroundGradientAnimation } from "./gradient-bg"
 import { HiOutlineDownload } from "react-icons/hi";
+import { IoMdClipboard } from "react-icons/io";
 import Image from "next/image";
+import toast from 'react-hot-toast';
+
+
 export const AboutMe = () => {
     return (
         <div className="p-4 z-10 bg-black-100 h-full w-full">
-            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-2 mt-2">
+            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-white-100 mb-2 mt-2">
               About Me
             </h2>
             <div className="p-1 sm:p-4">
@@ -42,7 +47,7 @@ export const AboutMe = () => {
 export const AvaliableForWork = () => {
     return (
         <div className="pt-4 pl-4 flex-col overflow-hidden relative z-10 bg-black-100 h-full w-full"> 
-            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-3 mt-2 pr-2">
+            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-white-100 mb-3 mt-2 pr-2">
                 Remote and On-Site
             </h2>
 
@@ -74,7 +79,7 @@ export const TechStack = () => {
     ]
     return (
             <div className="p-4 justify-between flex flex-col z-10 bg-black-100 w-full min-w-fit h-fit my-3 relative">
-                <h2 className="sm:hidden uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-2 mt-2">
+                <h2 className="sm:hidden uppercase tracking-widest text-xs sm:text-sm text-white-100 mb-2 mt-2">
                     My Tech Stack
                 </h2>
 
@@ -124,17 +129,17 @@ export const DownloadResume = () => {
       
      
          
-        <BackgroundGradientAnimation className="z-20 h-full w-full flex justify-center items-center">
+        <BackgroundGradientAnimation containerClassName="opacity-80 z-1" className="z-20 h-full w-full flex justify-center items-center">
           
             <div className="gap-y-2 flex flex-col py-2 justify-center items-center h-full w-full p-4">
                         
                     
-                <h2 className="uppercase tracking-widest text-xs sm:text-sm mb-2 mt-2 text-blue-100 text-center flex">
+                <h2 className="z-10 uppercase tracking-widest text-xs sm:text-sm mb-2 mt-2 text-white-100 text-center flex">
                     Download a Copy
                 </h2>
                     
 
-                        <a href="/CavanaughResume.pdf" download="CavanaughResume" className="" >   
+                        <a href="/CavanaughResume.pdf" download="CavanaughResume" className="z-10" >   
                             <div className="rounded-md flex relative bg-opacity-80 hover:bg-opacity-100 py-[6px] px-4 hover:underline text-purple">
                             <div className="items-center justify-between flex flex-nowrap gap-x-2 text-purple">
                                 <HiOutlineDownload className="h-[14px] w-[14px]"/>
@@ -157,9 +162,14 @@ export const CurrentlyWorkingOn = () => {
 }
 
 export const Socials = () => {
+    const handleEmailCopy = () => {
+        navigator.clipboard.writeText("cavanaugh.lc@gmail.com");
+        toast.success('Email Copied!')
+    }
+
     return (
         <div className="p-4 flex flex-col w-full">
-            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 mb-4 mt-2">
+            <h2 className="uppercase tracking-widest text-xs sm:text-sm text-white-100 mb-4 mt-2">
                 Connect 
             </h2>
 
@@ -168,13 +178,13 @@ export const Socials = () => {
                     <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank">
                         <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
                             <div className="relative px-2 py-2 flex gap-x-2">
-                                <img src="/link.svg" className="h-full" />
+                                <img src="/link.svg" className="h-[18px] w-[18px]" />
                             </div>
                             <div className="flex flex-row hover:underline gap-x-1">
-                                <text className="text-xs sm:text-sm">
+                                <text className="text-sm">
                                     /cavanaugh-lc
                                 </text>
-                                <CgExternal />
+                                <CgExternal size={18} />
                             </div>        
                         </div>
                     </a>
@@ -182,25 +192,28 @@ export const Socials = () => {
                     <a href="https://github.com/laurenc206/" target="_blank">
                         <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
                             <div className="relative px-2 py-2 flex gap-x-2">
-                                <img src="github2.svg" className="h-full "/>
+                                <img src="github2.svg" className="h-[18px] w-[18px]"/>
                             </div>
                             <div className="flex flex-row hover:underline gap-x-1">
-                                <text className="text-xs sm:text-sm">
+                                <text className="text-sm">
                                     /laurenc206
                                 </text>
-                                <CgExternal />
+                                <CgExternal size={18}/>
                             </div>
                             
                         </div>
                     </a>
 
                     <div className=" bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
-                        <div className="relative px-2 py-2 flex gap-x-2 items-center">
+                        <button className="relative px-2 py-2 flex gap-x-2 items-center" onClick={handleEmailCopy}>
                             <MdOutlineMail />
-                            <text className="text-xs sm:text-sm">
-                                cavanaugh.lc@gmail.com
-                            </text>
-                        </div>
+                            <div className="flex flex-row gap-x-1 hover:underline items-center">
+                                <text className="text-sm">
+                                    cavanaugh.lc@gmail.com
+                                </text>
+                                <IoMdClipboard size={14}/>
+                            </div>
+                        </button>
                     </div>
                 </div>
         </div>

@@ -182,13 +182,9 @@ export const Socials = () => {
                             <div className="relative px-2 py-2 flex flex-row gap-x-2">
                                 <img src="/link.svg" className="h-[18px] w-[18px]" />
                             </div>
-                            <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank"> 
-                            <span className="flex flex-row hover:underline gap-x-1">
-                                <text className="text-sm">
-                                    /cavanaugh-lc
-                                </text>
-                                <CgExternal size={18} />
-                            </span> 
+                            <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank" className="flex flex-row hover:underline gap-x-1 text-sm"> 
+                                /cavanaugh-lc
+                                <CgExternal size={20} />
                             </a> 
                             </div>
                            
@@ -202,14 +198,11 @@ export const Socials = () => {
                             <div className="px-2 py-2 flex gap-x-2">
                                 <img src="github2.svg" className="h-[18px] w-[18px]"/>
                             </div>
-                            <a href="https://github.com/laurenc206/" target="_blank" > 
-                            <span className="flex flex-row hover:underline gap-x-1">
-                                <text className="text-sm">
-                                    /laurenc206
-                                </text>
-                                <CgExternal size={18}/>
-                            </span>
+                            <a href="https://github.com/laurenc206/" target="_blank" className="flex flex-row hover:underline gap-x-1 text-sm" >
+                                /laurenc206
+                                <CgExternal size={20}/>
                             </a>
+                            
                             </div>
                     
                         
@@ -222,7 +215,7 @@ export const Socials = () => {
                                 <text className="text-sm">
                                     cavanaugh.lc@gmail.com
                                 </text>
-                                <IoMdClipboard size={14}/>
+                                <IoMdClipboard size={15}/>
                             </div>
                         </button>
                     </div>

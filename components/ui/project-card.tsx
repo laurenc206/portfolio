@@ -160,7 +160,7 @@ const ProjectCard = ({
                                     </p>
                                     <div className="flex flex-row gap-x-2">    
                                         <div className="flex grow border items-center bg-opacity-90 bg-slate-900 rounded-md py-1 px-2">
-                                            <div className="opacity-60 text-sm sm:text-base">
+                                            <div className="text-sm sm:text-base">
                                             {username}
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@ const ProjectCard = ({
                                     </p>
                                     <div className="flex flex-row gap-x-2">
                                         <div className="flex grow border items-center bg-opacity-90 bg-slate-900 rounded-md py-1 px-2">
-                                            <div className="opacity-60 text-sm sm:text-base">
+                                            <div className="text-sm sm:text-base">
                                                 {password}
                                             </div>    
                                         </div>

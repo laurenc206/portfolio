@@ -13,7 +13,7 @@ const VideoModal = ({ open, onClose }: any ) => {
             <div 
               
                 className={`
-                    px-3 py-6 sm:px-6 shadow transition-all  bg-zinc-950 rounded-xl border border-white/[.2]
+                    px-3 py-6 sm:px-6 shadow transition-all  bg-black-100 rounded-xl border border-white/[.2]
                     ${open ? "opacity-100" : "opacity-0"}
                 `}>
                     

@@ -80,7 +80,7 @@ const ContactForm = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="Type your message here"
-              className="bg-opacity-90 bg-slate-900 border border-white/[0.2] rounded-md focus:border-white/[0.5] py-3 px-4 text-white outlined-none font-medium text-sm sm:text-base"
+              className="bg-opacity-90 flex items-center bg-slate-900 border border-white/[0.2] rounded-md focus:border-white/[0.5]] py-3 px-4 text-white font-medium text-sm sm:text-base"
               
             />
           

@@ -25,7 +25,7 @@ const Experience = () => {
       
       <VerticalTimeline
         layout="1-column-left"
-        lineColor='#d4d4d4'
+        lineColor='#ffffff'
         
       >
         {experiences.map((experience, index) => (
@@ -88,7 +88,7 @@ const ExperienceCard = ({
           {title}
         </h3>
 
-        <p className="font-semibold uppercase tracking-widest text-xs text-neutral-300" style={{ margin: 0 }}>
+        <p className="font-semibold uppercase tracking-widest text-xs text-white-100" style={{ margin: 0 }}>
           {company_name}
         </p>
       </div>
@@ -97,7 +97,7 @@ const ExperienceCard = ({
         {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="lg:font-normal font-light text-sm text-neutral-300 leading-normal"
+            className="lg:font-normal font-light text-sm text-neutral-200 leading-normal"
           >
             {point}
           </li>
@@ -105,7 +105,7 @@ const ExperienceCard = ({
       </ul>
 
       <div>
-        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-white-100 -mb-5 mt-5">
+        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-neutral-300 -mb-5 mt-5">
           February 2024 - Current 
         </h3>
         </div>
@@ -127,13 +127,13 @@ const EducationCard = () => {
 
     }}
     contentArrowStyle={{ 
-      borderRight: '7px solid rgba(255, 255, 255, .6)', 
+      borderRight: '7px solid #ffffff', 
 
     }}
      
 
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#d4d4d4] rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-white rounded-full overflow-hidden' >
           <img
             src="uw.svg"
             alt="uw"
@@ -148,16 +148,16 @@ const EducationCard = () => {
           {"University of Washington"}
         </h3>
 
-        <p className="font-semibold uppercase md:tracking-widest text-xs text-neutral-300 mb-2" style={{ margin: 0 }}>
+        <p className="font-semibold uppercase md:tracking-widest text-xs text-white-100 mb-2" style={{ margin: 0 }}>
           {"Paul G. Allen School for Computer Science and Engineering"}
         </p>
       </div>
 
-      <div className="mt-4 sm:mt-2 pl-2 sm:pl-5 italic text-sm text-neutral-300">
+      <div className="mt-4 sm:mt-2 pl-2 sm:pl-5 italic text-sm text-white-100">
           {"Bachelors of Sciences, Computer Science"}
       </div>
 
-      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-[14px] tracking-wider">
+      <div className="mt-4 pl-2 sm:pl-5 text-neutral-200 text-[14px] tracking-wider">
         <span className="font-semibold">{"Related Coursework: "}</span>
         <span className="font-light">{"Software Engineering, Distributed Systems, Database Systems, Systems Programming, Web Browser Engineering, Computer Security, Data Structures and Algorithms, Object-Oriented Programming, Probability & Statistics in Computer Science"}</span>
       </div>

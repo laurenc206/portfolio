@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 
 const Paragraph = () => {
     return (
-          <div className="flex-col gap-y-2 font-light text-neutral-300 text-sm mb-5 w-full">
+          <div className="flex-col gap-y-2 font-light text-neutral-200 text-sm mb-5 w-full">
             <h3>
               Thanks for checking out my portfolio! 
             </h3>
@@ -31,7 +31,7 @@ const SocialIcons = () => {
     <div className="flex flex-row w-3/4 max-w-[280px] flex-wrap justify-between mt-2 mb-3">
 
       <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank"> 
-        <div className="opacity-70 hover:opacity-100 flex p-2 text-white-100 ">
+        <div className="opacity-90 hover:opacity-100 flex p-2 text-white-100 ">
           <Image src="/link.svg" alt="linked-in logo" width={18} height={18} />
 
         </div>
@@ -39,13 +39,13 @@ const SocialIcons = () => {
 
 
       <a href="https://github.com/laurenc206/" target="_blank"> 
-        <div className="opacity-70 hover:opacity-100 flex -mt-[2px] p-2">     
+        <div className="opacity-90 hover:opacity-100 flex -mt-[2px] p-2">     
           <Image src="/github2.svg" alt="github logo" width={20} height={20} className=""/>    
         </div>
       </a>
 
 
-      <button className="flex flex-row gap-x-[6px] opacity-70 hover:opacity-100 -mt-[4px] p-2" onClick={handleEmailCopy}>
+      <button className="flex flex-row gap-x-[6px] opacity-90 hover:opacity-100 -mt-[4px] p-2" onClick={handleEmailCopy}>
         <MdOutlineMail size={20}/>
       </button>
     </div>

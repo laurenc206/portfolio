@@ -88,7 +88,7 @@ const ProjectCard = ({
                         </h1>
 
                         {/* DESCRIPTION */}
-                        <p className="lg:font-normal font-light text-sm text-neutral-300 leading-normal">
+                        <p className="lg:font-normal font-light text-sm text-neutral-200 leading-normal">
                             {parse(des)}
                         </p>
 
@@ -144,7 +144,7 @@ const ProjectCard = ({
 
                         {/* TEXT BELOW BUTTONS */}
                         { des2 && 
-                            <div className={`pt-1 sm:pt-4 text-sm text-neutral-300 px-2`}>
+                            <div className={`pt-1 sm:pt-4 text-sm text-neutral-200 px-2`}>
                                 <p>{des2}</p>
                             </div>
 
@@ -159,7 +159,7 @@ const ProjectCard = ({
                                         {`username:`}
                                     </p>
                                     <div className="flex flex-row gap-x-2">    
-                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 border-white/[0.2] rounded-md py-3 px-4 outlined-none">
+                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 rounded-md py-1 px-2">
                                             <div className="opacity-60 text-sm sm:text-base">
                                             {username}
                                             </div>
@@ -174,7 +174,7 @@ const ProjectCard = ({
                                         {`password:`}
                                     </p>
                                     <div className="flex flex-row gap-x-2">
-                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 border-white/[0.2] rounded-md py-3 px-4 outlined-none">
+                                        <div className="flex grow border items-center bg-opacity-90 bg-slate-900 rounded-md py-1 px-2">
                                             <div className="opacity-60 text-sm sm:text-base">
                                                 {password}
                                             </div>    

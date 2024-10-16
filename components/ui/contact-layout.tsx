@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 const Paragraph = () => {
   return (
-    <div className="flex-col gap-y-2 font-light text-white text-sm lg:text-base">
+    <div className="flex-col gap-y-2 text-white text-sm lg:text-base">
     <h3>
       Thanks for checking out my portfolio! 
     </h3>
@@ -32,7 +32,7 @@ const SocialLinks = () => {
     <div className="flex flex-col md:flex-row flex-wrap gap-x-10 gap-y-4 -ml-2 ">
 
                         <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank">
-                            <div className="flex items-center gap-x-[6px] opacity-80 hover:opacity-100 p-2">
+                            <div className="flex items-center gap-x-[6px] opacity-90 hover:opacity-100 p-2">
                               <Image src="/link.svg" alt="linkedin logo" width={16} height={16}/>
                          
                               <div className="text-xs underline md:hidden lg:flex">
@@ -42,7 +42,7 @@ const SocialLinks = () => {
                         </a>
 
                         <a href="https://github.com/laurenc206/" target="_blank">
-                            <div className=" flex items-center gap-x-[6px] opacity-80 hover:opacity-100 -ml-[2px] p-2">                   
+                            <div className=" flex items-center gap-x-[6px] opacity-90 hover:opacity-100 -ml-[2px] p-2">                   
                               <Image src="/github2.svg" alt="github logo"  width={18} height={18} />
                             
                               <div className="text-xs underline md:hidden lg:flex">
@@ -51,7 +51,7 @@ const SocialLinks = () => {
                             </div>
                         </a>
 
-                        <div className="flex flex-wrap opacity-80">
+                        <div className="flex flex-wrap opacity-90">
                             <button className="flex items-center gap-x-[6px] -mt-[4px] p-2" onClick={handleEmailCopy}>
                                 <MdOutlineMail size={18}/>
                                 <div className="text-xs  md:hidden lg:flex">

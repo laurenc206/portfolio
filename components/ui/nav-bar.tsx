@@ -172,7 +172,7 @@ export const NavBar = ({
                             <li
                                 onClick={() => setMobileOpen((mobileOpen) => !mobileOpen)}
                                 key={`link=${idx}`}
-                                className={`text-neutral-300 block px-3 py-2 text-base font-medium cursor-pointer relative items-center space-x-1 hover:text-white hover:bg-gray-700 `}
+                                className={`text-white block px-3 py-2 text-base font-medium cursor-pointer relative items-center space-x-1 hover:text-white hover:bg-gray-700 `}
                             >
                                 <Link href={link}>{name}</Link>
                             </li>

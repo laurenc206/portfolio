@@ -182,10 +182,13 @@ export const Socials = () => {
                             <div className="relative px-2 py-2 flex flex-row gap-x-2">
                                 <img src="/link.svg" className="h-[18px] w-[18px]" />
                             </div>
-                            <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank" className="flex flex-row hover:underline gap-x-1 text-sm"> 
+                            
+                            <div className="flex flex-row hover:underline gap-x-1 text-sm"> 
                                 /cavanaugh-lc
+                                <a href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank"> 
                                 <CgExternal size={20} />
-                            </a> 
+                                </a>
+                            </div>
                             </div>
                            
                    
@@ -198,10 +201,12 @@ export const Socials = () => {
                             <div className="px-2 py-2 flex gap-x-2">
                                 <img src="github2.svg" className="h-[18px] w-[18px]"/>
                             </div>
-                            <a href="https://github.com/laurenc206/" target="_blank" className="flex flex-row hover:underline gap-x-1 text-sm" >
+                            <div className="flex flex-row hover:underline gap-x-1 text-sm" >
                                 /laurenc206
+                                <a href="https://github.com/laurenc206/" target="_blank" >
                                 <CgExternal size={20}/>
-                            </a>
+                                </a>
+                            </div>
                             
                             </div>
                     

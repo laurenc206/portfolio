@@ -52,7 +52,7 @@ const ExperienceCard = ({
   points
  }: ExperienceProps) => {
   return (
-    <div className="">
+
     <VerticalTimelineElement
       contentStyle={{ 
         background: '#000319', 
@@ -82,13 +82,13 @@ const ExperienceCard = ({
       }
     
     >
-      <div className="opacity-90">
+   
       <div>
         <h3 className="text-white text-2xl sm:text-3xl font-semibold mb-2 ">
           {title}
         </h3>
 
-        <p className="font-semibold uppercase tracking-widest text-xs text-white-100" style={{ margin: 0 }}>
+        <p className="font-semibold uppercase tracking-widest text-xs text-neutral-200" style={{ margin: 0 }}>
           {company_name}
         </p>
       </div>
@@ -97,7 +97,7 @@ const ExperienceCard = ({
         {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="lg:font-normal font-light text-sm sm:text-base text-neutral-200 leading-normal"
+            className="lg:font-normal text-sm sm:text-base text-neutral-200 leading-normal"
           >
             {point}
           </li>
@@ -109,9 +109,9 @@ const ExperienceCard = ({
           February 2024 - Current 
         </h3>
         </div>
-        </div>
+
     </VerticalTimelineElement>
-    </div>
+   
   )
 }
 
@@ -148,16 +148,16 @@ const EducationCard = () => {
           {"University of Washington"}
         </h3>
 
-        <p className="font-semibold uppercase md:tracking-widest text-xs text-white-100 mb-2" style={{ margin: 0 }}>
+        <p className="font-semibold uppercase md:tracking-widest text-xs text-neutral-200 mb-2" style={{ margin: 0 }}>
           {"Paul G. Allen School for Computer Science and Engineering"}
         </p>
       </div>
 
-      <div className="mt-4 sm:mt-2 pl-2 sm:pl-5 italic text-sm text-white-100">
+      <div className="mt-4 sm:mt-2 pl-2 sm:pl-5 italic text-sm text-neutral-200">
           {"Bachelors of Sciences, Computer Science"}
       </div>
 
-      <div className="mt-4 pl-2 sm:pl-5 text-neutral-200 text-[14px] tracking-wider">
+      <div className="mt-4 pl-2 sm:pl-5 text-white-100 text-[14px] tracking-wider">
         <span className="font-semibold">{"Related Coursework: "}</span>
         <span className="font-light">{"Software Engineering, Distributed Systems, Database Systems, Systems Programming, Web Browser Engineering, Computer Security, Data Structures and Algorithms, Object-Oriented Programming, Probability & Statistics in Computer Science"}</span>
       </div>

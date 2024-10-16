@@ -25,7 +25,7 @@ const Experience = () => {
       
       <VerticalTimeline
         layout="1-column-left"
-        lineColor='#ffffff'
+        lineColor='#bec1dd'
         
       >
         {experiences.map((experience, index) => (
@@ -63,7 +63,7 @@ const ExperienceCard = ({
 
       }}
       contentArrowStyle={{ 
-        borderRight: '7px solid rgba(255, 255, 255, .6)', 
+        borderRight: '7px solid #bec1dd', 
 
       }}
    
@@ -72,7 +72,7 @@ const ExperienceCard = ({
 
       
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-white rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#bec1dd] rounded-full overflow-hidden' >
           <img
             src={icon}
             alt={company_name}
@@ -127,13 +127,13 @@ const EducationCard = () => {
 
     }}
     contentArrowStyle={{ 
-      borderRight: '7px solid #ffffff', 
+      borderRight: '7px solid #bec1dd', 
 
     }}
      
 
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-white rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#bec1dd] rounded-full overflow-hidden' >
           <img
             src="uw.svg"
             alt="uw"

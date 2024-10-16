@@ -14,7 +14,7 @@ import {Toaster} from 'react-hot-toast';
 export default function Home() {
 
   return (
-   <main className="bg-black flex justify-center items-center flex-col relative ">
+   <main className="bg-black flex justify-center items-center flex-col relative h-full w-full">
         <Toaster />  
           <div className={`absolute top-0 left-0 h-[85vh] w-full contrast-200 brightness-100 saturate-200 overflow-hidden`}>
                   <BackgroundGradientAnimation containerClassName="opacity-70" /> 

@@ -66,7 +66,7 @@ const ProjectCard = ({
   
     <div className="flex justify-center relative max-w-[660px] lg:max-w-[600px]" >
                     
-                    <div className="items-center border border-white/[0.2] bg-black-100 p-6 justify-between space-y-3 rounded-3xl">
+                    <div className="items-center border border-white/[0.2] bg-black-100 bg-opacity-85 p-6 justify-between space-y-3 rounded-3xl">
 
                         {/* PROJECT IMAGE */}
                         <div className="relative flex items-center justify-center  overflow-hidden h-[10rem] mb-6">

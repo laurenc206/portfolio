@@ -55,7 +55,7 @@ const ExperienceCard = ({
 
     <VerticalTimelineElement
       contentStyle={{ 
-        background: '#000319', 
+        background: 'rgba(0, 3, 25, .85)', 
         color: '#fff',
         boxShadow: 'none',
         border: '1px solid rgba(255, 255, 255, .2)',
@@ -119,7 +119,7 @@ const EducationCard = () => {
   return (
     <VerticalTimelineElement
     contentStyle={{ 
-      background: '#000319', 
+      background: 'rgba(0, 3, 25, .85)', 
       color: '#fff',
       boxShadow: 'none',
       border: '1px solid rgba(255, 255, 255, .2)',

@@ -72,7 +72,7 @@ const ExperienceCard = ({
 
       
       icon={
-        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-[#d4d4d4] rounded-full overflow-hidden' >
+        <div className='z-[499] flex h-[50px] w-[50px] bg-black -ml-[5px] -mt-[5px] border-[1px] border-white rounded-full overflow-hidden' >
           <img
             src={icon}
             alt={company_name}
@@ -97,7 +97,7 @@ const ExperienceCard = ({
         {points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="lg:font-normal font-light text-sm text-neutral-200 leading-normal"
+            className="lg:font-normal font-light text-sm sm:text-base text-neutral-200 leading-normal"
           >
             {point}
           </li>
@@ -105,7 +105,7 @@ const ExperienceCard = ({
       </ul>
 
       <div>
-        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-neutral-300 -mb-5 mt-5">
+        <h3 className="w-full justify-right flex items-center uppercase tracking-widest text-xs text-white-100 -mb-5 mt-5">
           February 2024 - Current 
         </h3>
         </div>

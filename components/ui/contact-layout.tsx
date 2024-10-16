@@ -68,7 +68,7 @@ const ContactLayout= () => {
 
   return (
 
-    <div className="flex flex-col w-full opacity-0 sm:opacity-100">
+    <div className="flex flex-col w-full opacity-0 sm:opacity-100 my-6">
         <h2 className="uppercase tracking-widest text-xs sm:text-sm text-blue-100 max-w-80 mb-3">
           Get In Touch
         </h2>

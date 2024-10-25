@@ -180,7 +180,7 @@ export const Socials = () => {
                    
                         
                             <div className="bg-opacity-90 bg-slate-900 flex items-center rounded-md py-1 px-2">
-                            <div className="relative px-2 py-2 flex flex-row gap-x-2">
+                            <div className="px-2 py-2 flex flex-row gap-x-2">
                                 <img src="/link.svg" className="h-[18px] w-[18px]" />
                             </div>
                             <Link href="https://www.linkedin.com/in/cavanaugh-lc/" target="_blank" className="z-40 flex flex-row gap-x-1 hover:underline py-1">
